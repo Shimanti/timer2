@@ -29,13 +29,13 @@ body {
   flex-direction: column;
 }
 
-/* .controls {
+.controls {
   display: flex;
 }
 
 .controls > * {
   flex: 1;
-} */
+}
 
 .controls form {
   flex: 1;
