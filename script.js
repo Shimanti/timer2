@@ -1,9 +1,5 @@
-// import JSConfetti from 'js-confetti'
-//
-// const jsConfetti = new JSConfetti()
-
-
 let countdown
+const jsConfetti = new JSConfetti()
 
 // declare the HTML variables so that they can be used below
 const timerDisplay = document.querySelector('.time-left')
@@ -28,8 +24,7 @@ function timer(seconds) {
     // check to see if we need to stop (at rounded 0 seconds)
     if(secondsLeft <= -1) {
       clearInterval(countdown)
-      // jsConfetti.addConfetti()
-      return
+      return jsConfetti.addConfetti()
     }
 
     // display time left in minutes and seconds
